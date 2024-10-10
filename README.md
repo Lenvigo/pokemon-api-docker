@@ -11,11 +11,15 @@ Ejercicio Docker:
 
 
 Construir imagen:   docker-compose up --build
+
 Logeo en Docker Hub: docker login
-Buscar nombre de la imagen: docker images 
+
+Buscar nombre de la imagen: docker images  
    REPOSITORY                 TAG       IMAGE ID       CREATED          SIZE
    pokemon-web                latest    f1e413b5a56d   14 minutes ago   702MB
+
 Etiquetar imagen: docker tag pokemon-web lenvigo/pokemon-web
+
 Subir imagen a Docker Hub: docker push lenvigo/pokemon-web
 
 
