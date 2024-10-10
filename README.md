@@ -10,4 +10,16 @@ Ejercicio Docker:
 5. Buildea el contenedor necesario y realiza los comandos necesarios para mostrar esta aplicación mediante un servicio web dentro de un contenedor y servirla a tus compañeros a través de tu ordenador físico.
 
 
-   docker-compose up --build
+Construir imagen:   docker-compose up --build
+Logeo en Docker Hub: docker login
+Buscar nombre de la imagen: docker images 
+   REPOSITORY                 TAG       IMAGE ID       CREATED          SIZE
+   pokemon-web                latest    f1e413b5a56d   14 minutes ago   702MB
+Etiquetar imagen: docker tag pokemon-web lenvigo/pokemon-web
+Subir imagen a Docker Hub: docker push lenvigo/pokemon-web
+
+
+
+Ejecuta el contenedor localmente: docker run -d -p 8080:80 pokemon-web
+Verifica funcionamiento del contenedor: docker ps
+
